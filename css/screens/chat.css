@@ -1,6 +1,6 @@
 #chat-background {
   background-color: #abc1d1;
-  height: 100vh;
+  height: 100%;
 }
 #chat-background .status-bar,
 #chat-background .alt-header {
@@ -111,7 +111,7 @@
 }
 .reply:focus-within input {
   width: 110%;
-  transform: translateX(-11%) translateY(-80px);
+  transform: translateX(-10%) translateY(-80px);
 }
 .reply {
   position: fixed;
