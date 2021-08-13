@@ -1,0 +1,65 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  border-top: 1px solid #e2e2e2;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+.nav__a {
+  color: #2e363e;
+  position: relative;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: noen;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(180deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.nav__notification {
+  position: absolute;
+  left: 22px;
+  top: -19px;
+  animation: notificationAnimation 1.5s ease-in-out infinite;
+}
+.nav__newicon {
+  position: absolute;
+  top: -12px;
+  left: 33px;
+}
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.nav__btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+.nav__btn:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.nav__btn:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.nav__btn:nth-child(4) {
+  animation-delay: 0.9s;
+}
